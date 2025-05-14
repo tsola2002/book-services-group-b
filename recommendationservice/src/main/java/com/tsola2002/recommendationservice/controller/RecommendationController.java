@@ -16,24 +16,28 @@ public class RecommendationController {
 
     // Get all recommendations for a specific book
     @GetMapping("/{bookId}")
+    @CrossOrigin(origins = "http://localhost:5173")
     public List<Recommendation> getRecommendationsByBookId(@PathVariable int bookId) {
         return recommendationService.getByBookId(bookId);
     }
 
     // Create a new recommendation
     @PostMapping
+    @CrossOrigin(origins = "http://localhost:5173")
     public Recommendation createRecommendation(@RequestBody Recommendation recommendation) {
         return recommendationService.save(recommendation);
     }
 
     // Update a recommendation by ID
     @PutMapping("/{id}")
+    @CrossOrigin(origins = "http://localhost:5173")
     public Recommendation updateRecommendation(@PathVariable Long id, @RequestBody Recommendation recommendationDetails){
         return recommendationService.updateRecommendation(id, recommendationDetails);
     }
 
     // Delete all recommendations for a specific book
     @DeleteMapping("/{bookId}")
+    @CrossOrigin(origins = "http://localhost:5173")
     public void deleteRecommendationsByBookId(@PathVariable int bookId) {
         recommendationService.deleteByBookId(bookId);
     }
