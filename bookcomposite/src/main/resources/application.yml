@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: bookcomposite
+
+services:
+  bookservice:
+    host: localhost
+    port: 8084
+  reviewservice:
+      host: localhost
+      port: 8085
+  recommendationservice:
+      host: localhost
+      port: 8086
+
