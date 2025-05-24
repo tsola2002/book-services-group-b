@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/book-services-group-b.iml" filepath="$PROJECT_DIR$/.idea/book-services-group-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite/book-services-group-b.bookcomposite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite/book-services-group-b.bookcomposite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recommendationservice/book-services-group-b.recommendationservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recommendationservice/book-services-group-b.recommendationservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookservice.iml" filepath="$PROJECT_DIR$/.idea/modules/bookservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.tsola2002.bookcomposite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.tsola2002.bookcomposite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recommendationservice.iml" filepath="$PROJECT_DIR$/.idea/modules/recommendationservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recommendationservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recommendationservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recommendationservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/recommendationservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reviewservice.iml" filepath="$PROJECT_DIR$/.idea/modules/reviewservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reviewservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reviewservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reviewservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/reviewservice.test.iml" />
     </modules>
   </component>
 </project>

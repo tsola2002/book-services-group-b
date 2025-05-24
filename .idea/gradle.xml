@@ -4,6 +4,19 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="20" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/bookcomposite" />
+            <option value="$PROJECT_DIR$/bookservice" />
+            <option value="$PROJECT_DIR$/recommendationservice" />
+            <option value="$PROJECT_DIR$/reviewservice" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/bookcomposite" />
         <option name="gradleJvm" value="20" />
         <option name="modules">
