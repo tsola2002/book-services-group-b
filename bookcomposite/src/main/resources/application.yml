@@ -3,16 +3,18 @@ server:
 
 spring:
   application:
-    name: bookcompositeggi
+    name: bookcomposite
+  datasource:
+    url: mongodb://localhost:27017/bookcomposite
+    username: root
+    password:
+  cloud:
+    compatibility-verifier:
+      enabled: false
 
-services:
-  bookservice:
-    host: localhost
-    port: 8084
-  reviewservice:
-      host: localhost
-      port: 8085
-  recommendationservice:
-      host: localhost
-      port: 8086
-
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8087/eureka
