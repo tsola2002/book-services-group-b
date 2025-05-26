@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: bookcomposite
+    name: bookcompositeggi
 
 services:
   bookservice:
