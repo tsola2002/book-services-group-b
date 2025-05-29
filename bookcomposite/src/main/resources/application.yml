@@ -4,17 +4,11 @@ server:
 spring:
   application:
     name: bookcomposite
-  datasource:
-    url: mongodb://localhost:27017/bookcomposite
-    username: root
-    password:
-  cloud:
-    compatibility-verifier:
-      enabled: false
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8087/eureka
+    serviceUrl:
+      com:
+      defaultZone: https://eurekaserver-0ha1.onrender.com/eureka/
