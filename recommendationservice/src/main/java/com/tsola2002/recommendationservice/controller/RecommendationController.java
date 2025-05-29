@@ -14,6 +14,13 @@ public class RecommendationController {
     @Autowired
     private RecommendationService recommendationService;
 
+    // Get all recommendations
+    @GetMapping("/")
+    @CrossOrigin(origins = "http://localhost:5173")
+    public List<Recommendation> getAllRecommendations() {
+        return recommendationService.getAllRecommendations();
+    }
+
     // Get all recommendations for a specific book
     @GetMapping("/{bookId}")
     @CrossOrigin(origins = "http://localhost:5173")

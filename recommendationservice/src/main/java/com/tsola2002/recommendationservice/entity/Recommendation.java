@@ -12,20 +12,18 @@ import lombok.NoArgsConstructor;
 public class Recommendation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // auto increment by DB
+    @Column(name = "COL_RECOMMENDATION_ID")
+    private int recommendationId;
 
     @Column(name = "COL_BOOK_ID")
     private int bookId;
-
-    @Column(name = "COL_RECOMMENDATION_ID")
-    private int recommendationId;
 
     @Column(name = "COL_AUTHOR")
     private String author;
 
     @Column(name = "COL_RATE")
-    private int rate;
+    private double rate;
 
     @Column(name = "COL_CONTENT")
     private String content;

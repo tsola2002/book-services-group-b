@@ -13,6 +13,11 @@ public class RecommendationService {
     @Autowired
     private RecommendationRepository recommendationRepository;
 
+    // Get all recommendations
+    public List<Recommendation> getAllRecommendations() {
+        return recommendationRepository.findAll();
+    }
+
     // Get all recommendations for a specific book
     public List<Recommendation> getByBookId(int bookId) {
         return recommendationRepository.findAllByBookId(bookId);

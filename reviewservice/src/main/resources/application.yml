@@ -1,0 +1,20 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: reviewService
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+  cloud:
+    compatibility-verifier:
+      enabled: false
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      com:
+      defaultZone: https://eurekaserver-0ha1.onrender.com/eureka/
+
+

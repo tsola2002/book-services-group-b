@@ -1,0 +1,7 @@
+.gradle
+.git
+build
+node_modules
+*.iml
+*.log
+*.class
