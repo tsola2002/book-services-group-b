@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite/book-services-group-b.bookcomposite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite/book-services-group-b.bookcomposite.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/recommendationservice/book-services-group-b.recommendationservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recommendationservice/book-services-group-b.recommendationservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/book-services-group-b.reviewservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/book-services-group-b.reviewservice.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookcomposite.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookcomposite.test.iml" />

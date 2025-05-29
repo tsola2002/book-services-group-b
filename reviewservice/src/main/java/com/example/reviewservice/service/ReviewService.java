@@ -19,7 +19,7 @@ public class ReviewService {
     }
 
     // Get all reviews for a specific book
-    public List<Review> getReviewsByBookId(String bookId) {
+    public List<Review> getReviewsByBookId(int bookId) {
         return reviewRepository.findByBookId(bookId);
     }
 
@@ -37,12 +37,6 @@ public class ReviewService {
             review.setContent(reviewDetails.getContent());
             return reviewRepository.save(review);
         }).orElseThrow(() -> new RuntimeException("Review not found with id " + id));
-    }
-
-    // Delete all reviews for a specific book
-    public void deleteReviewsByBookId(String bookId) {
-        List<Review> reviews = reviewRepository.findByBookId(bookId);
-        reviewRepository.deleteAll(reviews);
     }
 
     // Delete a single review by ID

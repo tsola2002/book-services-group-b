@@ -23,7 +23,7 @@ public class ReviewController {
 
     // Get all reviews for a specific book
     @GetMapping("/{bookId}")
-    public List<Review> getReviewsByBookId(@PathVariable String bookId) {
+    public List<Review> getReviewsByBookId(@PathVariable int bookId) {
         return reviewService.getReviewsByBookId(bookId);
     }
 
