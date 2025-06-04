@@ -28,19 +28,29 @@ public class ReviewService {
         return reviewRepository.save(review);
     }
 
-    // Update an existing review by ID
-    public Review updateReview(String id, Review reviewDetails) {
-        return reviewRepository.findById(id).map(review -> {
-            review.setBookId(reviewDetails.getBookId());
-            review.setAuthor(reviewDetails.getAuthor());
-            review.setSubject(reviewDetails.getSubject());
-            review.setContent(reviewDetails.getContent());
-            return reviewRepository.save(review);
-        }).orElseThrow(() -> new RuntimeException("Review not found with id " + id));
+    // ✅ Get review by reviewId
+    public Review getReviewById(String reviewId) {
+        return reviewRepository.findById(reviewId)
+                .orElseThrow(() -> new RuntimeException("Review not found with ID: " + reviewId));
     }
 
-    // Delete a single review by ID
-    public void deleteReview(String id) {
-        reviewRepository.deleteById(id);
+    // ✅ Update a review by reviewId
+    public Review updateReviewById(String reviewId, Review reviewDetails) {
+        Review review = reviewRepository.findById(reviewId)
+                .orElseThrow(() -> new RuntimeException("Review not found with ID: " + reviewId));
+
+        review.setAuthor(reviewDetails.getAuthor());
+        review.setSubject(reviewDetails.getSubject());
+        review.setContent(reviewDetails.getContent());
+
+        return reviewRepository.save(review);
+    }
+
+    // ✅ Delete a review by reviewId
+    public void deleteReviewById(String reviewId) {
+        Review review = reviewRepository.findById(reviewId)
+                .orElseThrow(() -> new RuntimeException("Review not found with ID: " + reviewId));
+
+        reviewRepository.delete(review);
     }
 }

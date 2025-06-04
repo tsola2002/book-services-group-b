@@ -11,3 +11,4 @@ public class AppConfig {
         return new RestTemplate();
     }
 }
+ // defines and provides a RestTemplate bean for the application.

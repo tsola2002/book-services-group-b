@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: ${PORT:8083}
 
 spring:
   application:
@@ -10,5 +10,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      com:
       defaultZone: https://eurekaserver-0ha1.onrender.com/eureka/

@@ -12,7 +12,7 @@ import java.util.Map;
 @AllArgsConstructor
 public class BookComposite {
 
-//    private Map<String, Object> book;
+    private Map<String, Object> book;
     private List<Map<String, Object>> review;
     private List<Map<String, Object>> recommendation;
 }

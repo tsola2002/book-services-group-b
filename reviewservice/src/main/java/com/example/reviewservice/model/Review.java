@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class Review {
 
     @Id
-    private String id;
+    private String reviewId;
 
     @Field("COL_BOOK_ID")
     private int bookId;

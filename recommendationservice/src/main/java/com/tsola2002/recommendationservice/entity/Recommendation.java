@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 public class Recommendation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // auto increment by DB
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "COL_RECOMMENDATION_ID")
-    private int recommendationId;
+    private Long recommendationId;
 
     @Column(name = "COL_BOOK_ID")
-    private int bookId;
+    private Long bookId;
 
     @Column(name = "COL_AUTHOR")
     private String author;
